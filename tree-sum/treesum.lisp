@@ -1,0 +1,5 @@
+(defun treesum (tree)
+  (cond ((numberp tree) tree)
+	((null tree) 0)
+	(t (+ (treesum (car tree))
+	      (treesum (cadr tree))))))
